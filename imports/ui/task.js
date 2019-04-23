@@ -18,6 +18,7 @@ Template.task.events({
   'click .toggle-private'() {
     Meteor.call('tasks.setPrivate', this._id, !this.private);
   },
+  // If items text is too long, hide it, and show it on click
   'click .todo-content'(event) {
     const items = document.querySelectorAll('.todo-content')
     items.forEach(item => {
