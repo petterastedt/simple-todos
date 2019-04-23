@@ -1,8 +1,10 @@
 <template name="task">
     <li class="{{#if checked}}checked{{/if}} {{#if private}}private{{/if}}">
-        <button class="delete">&times;</button>
+        <div class="content-wrapper">
         <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
-        <span class="text"><strong>{{username}}</strong> - {{text}}</span>
+        <p class="todo-content" id="{{_id}}"><strong>{{username}}</strong> - {{text}}</p>
+        </div>
+        <div class="btn-wrapper">
         {{#if isOwner}}
         {{#if private}}
         <button class="toggle-private">
@@ -14,6 +16,8 @@
         </button>
         {{/if}}  
         {{/if}}
+        <button class="delete">&times;</button>
+    </div>
     </li>
 </template>
   

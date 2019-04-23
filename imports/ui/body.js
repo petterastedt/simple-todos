@@ -3,6 +3,7 @@ import { ReactiveDict } from 'meteor/reactive-dict';
 import { Tasks } from '../api/tasks';
 import { Meteor } from 'meteor/meteor'
 import './body.html';
+import './task.html';
 import './task.js';
 
 Template.body.onCreated(function bodyOnCreated() {
@@ -20,7 +21,7 @@ Template.body.helpers({
     },
     incompleteCount() {
         return Tasks.find({ checked: { $ne: true } }).count() 
-      },
+      }
 })
 //Submits new todo item
 Template.body.events({
