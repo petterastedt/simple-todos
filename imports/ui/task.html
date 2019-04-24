@@ -2,9 +2,9 @@
     <li class="{{#if checked}}checked{{/if}} {{#if private}}private{{/if}}">
         <div class="content-wrapper">
         <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
-        <p class="todo-content" id="{{_id}}"><strong>{{username}}</strong> - {{text}}</p>
+        <p class="todo-content" id="{{_id}}"><strong>{{username}}</strong> - {{text}} <br><span class="added">Added on: {{createdAt}}</span></p>
         </div>
-        <div class="btn-wrapper">
+        <div class="btn-wrapper">   
         {{#if isOwner}}
         {{#if private}}
         <button class="toggle-private">Private</button>

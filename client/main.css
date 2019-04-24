@@ -92,7 +92,7 @@ li.checked {
   color: #888;
 }
 
-li.checked .text {
+li.checked .todo-content {
   text-decoration: line-through;
 }
 
@@ -117,7 +117,10 @@ li.private {
   padding: 0 0 0 10px;
   margin: 0;
 }
-
+.added {
+  color: grey;
+  font-size: 11px;
+}
 .show-text {
   overflow: visible;
   white-space: normal;

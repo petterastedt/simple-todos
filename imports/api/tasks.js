@@ -23,7 +23,7 @@ Meteor.methods({
       }       
         Tasks.insert({  
         text,  
-        createdAt: new Date(),  
+        createdAt: new Date().toLocaleString("en-US"), 
         owner: Meteor.userId(),
         username: Meteor.user().username,  
         });  
