@@ -105,7 +105,10 @@ li.private {
   display: flex;
   width: 80%;
 }
-
+.btn-wrapper {
+  display: flex;
+  align-items: center;
+}
 .todo-content {
   top: 2px;
   margin-left: 10px;
